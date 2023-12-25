@@ -16,6 +16,7 @@ document.documentElement.className = 'js'
 
 const jsExt = import.meta.env.DEV ? 'ts' : 'js'
 
+
 conditioner.addPlugin({
   // Example of context: data-context="@media (min-width: 1024px) and was @visible"
   monitor: {

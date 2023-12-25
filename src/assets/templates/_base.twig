@@ -1,7 +1,7 @@
 {% set siteTitle = '⚡️ Vite front-end boilerplate' %}
 
 <!DOCTYPE html>
-<html lang="{{ lang }}">
+<html lang="{{ lang }}" >
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, height=device-height, shrink-to-fit=no">
@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
     <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
-    <script type="module" src="/assets/js/app.ts"></script>
 
     {# Metas #}
     {% block meta_tags %}{% endblock %}
@@ -20,7 +19,7 @@
     {% block stylesheets %}{% endblock %}
   </head>
 
-  <body class="{{ body_class ?? '' }}">
+  <body class="{{ body_class ?? '' }}" data-module="scroll">
     <canvas class="gl" data-module="canvas"></canvas>
     <div class="js-cursor" data-module="cursor"></div>
 
@@ -32,5 +31,7 @@
     {# JS #}
     {% block javascripts %}{% endblock %}
 
+
+    <script type="module" src="/assets/js/app.ts"></script>
   </body>
 </html>
