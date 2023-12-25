@@ -1,0 +1,16 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: set-color(black);
+  color: set-color(white);
+
+  &__title {
+    padding: rem(100px) 0;
+    text-transform: uppercase;
+    font-size: rem(200px);
+    font-weight: 700;
+  }
+}

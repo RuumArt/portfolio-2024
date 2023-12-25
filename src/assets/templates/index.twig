@@ -1,11 +1,13 @@
 {% extends './_base.twig' %}
 
 {% block main %}
-  <h1
-    data-module="Hello"
-    data-context="@media (min-width: 1024px) and was @visible"
-  >
-    {{ data[lang].title }}
-  </h1>
-
+  <div class="hero">
+    <h1
+      class="hero__title"
+      data-module="Hello"
+      data-context="@media (min-width: 1024px) and was @visible"
+    >
+      {{ data[lang].title }}
+    </h1>
+  </div>
 {% endblock %}
