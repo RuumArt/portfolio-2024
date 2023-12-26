@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import gsap from 'gsap';
-import { Events } from "../events";
+import { Events } from "../../events";
 
 export default class Canvas {
     constructor(element) {

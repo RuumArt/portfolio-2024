@@ -3,6 +3,11 @@ import Events from './Events';
 import { mix } from '../utils/math'
 
 class Raf {
+    target: number;
+    current: number;
+    currentRounded: number;
+    ease: number;
+
     constructor() {
         this.target = 0;
         this.current = 0;

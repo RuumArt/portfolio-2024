@@ -21,7 +21,12 @@
 
   <body class="{{ body_class ?? '' }}" data-module="scroll">
     <canvas class="gl" data-module="canvas"></canvas>
-    <div class="js-cursor" data-module="cursor"></div>
+
+    <div class="cursor" data-module="cursor">
+      <div class="js-cursor cursor__el">
+        <div></div>
+      </div>
+    </div>
 
     {# Content #}
     <main class="main">

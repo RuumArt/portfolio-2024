@@ -7,6 +7,7 @@
 @import "base/layout";
 @import "base/typography";
 @import "base/root";
+@import "base/lenis";
 
 /* Utils */
 @import "utils/seo";
@@ -19,7 +20,9 @@
 
 /* Components */
 @import "components/gl";
+@import "components/cursor";
 @import "components/icons";
+@import "components/gtext";
 @import "components/hero";
 
 /* Patterns */

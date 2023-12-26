@@ -1,5 +1,6 @@
 export default class EventEmitter {
-    static instance;
+    static instance
+    callbacks: object;
 
     constructor() {
         this.callbacks = {};

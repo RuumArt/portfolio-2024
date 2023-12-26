@@ -12,6 +12,8 @@ import 'virtual:svg-icons-register'
 import './polyfill/dataset'
 import '../scss/app.scss'
 
+import './utils/GsapRegister';
+
 document.documentElement.className = 'js'
 
 const jsExt = import.meta.env.DEV ? 'ts' : 'js'
